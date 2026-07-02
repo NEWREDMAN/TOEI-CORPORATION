@@ -401,3 +401,45 @@ footer{
 .services .service-body{
     padding:30px 28px 34px;
 }
+
+/* Contact info */
+.contact-info{
+    margin-top:40px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+    text-align:left;
+}
+
+.contact-item{
+    background:#fafafa;
+    border:1px solid #eeeeee;
+    border-radius:8px;
+    padding:30px 26px;
+}
+
+.contact-item h3{
+    font-size:20px;
+    margin-bottom:14px;
+    color:#222222;
+}
+
+.contact-item p{
+    font-size:16px;
+    color:#666666;
+}
+
+.contact-item a{
+    color:#0b9c90;
+    text-decoration:none;
+}
+
+.contact-item a:hover{
+    text-decoration:underline;
+}
+
+@media(max-width:800px){
+    .contact-info{
+        grid-template-columns:1fr;
+    }
+}
