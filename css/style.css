@@ -115,7 +115,7 @@ body{
 .hero-image img{
     width:100%;
     height:400px;
-    object-fit:cover;
+    object-fit:contain;
     object-position:center;
     display:block;
     border-radius:4px;
@@ -442,4 +442,56 @@ footer{
     .contact-info{
         grid-template-columns:1fr;
     }
+}
+.site-credit{
+    margin-top:8px;
+    font-size:13px;
+    color:#999999;
+}
+
+.site-credit a{
+    color:#cccccc;
+    text-decoration:none;
+}
+
+.site-credit a:hover{
+    color:#0b9c90;
+}
+/* 缩小联系我们区域高度 */
+.contact {
+    padding: 60px 0 45px;
+}
+
+.contact .section-label {
+    margin-bottom: 16px;
+}
+
+.contact h2 {
+    margin-bottom: 24px;
+}
+
+.contact .section-text {
+    margin-bottom: 36px;
+}
+
+.contact-info {
+    gap: 24px;
+}
+
+.contact-item {
+    padding: 28px 30px;
+    min-height: auto;
+}
+
+.contact-item h3 {
+    margin-bottom: 18px;
+}
+
+.contact-item p {
+    margin-bottom: 0;
+}
+
+/* 缩小底部版权区域高度 */
+footer {
+    padding: 28px 0 24px;
 }
