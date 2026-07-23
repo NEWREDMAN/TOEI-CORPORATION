@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TOEI CORPORATIONへの商品、展示会、旅行、国際貿易に関するお問い合わせはこちらから。">
+    <title>お問い合わせ｜TOEI CORPORATION</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="container header-inner"><div class="brand"><a href="index-ja.html"><img src="images/logo.jpg" alt="TOEI CORPORATION"></a></div><nav class="main-nav"><a href="index-ja.html">ホーム</a><a href="about-ja.html">会社案内</a><a href="services-ja.html">事業内容</a><a href="contact-ja.html" class="active">お問い合わせ</a><a href="contact.html" class="lang">简体中文</a></nav></div></header>
+<main>
+<section class="page-hero contact-hero"><div class="container"><p class="section-label">Contact Us</p><h1>お問い合わせ</h1><p>ご要望をお聞かせください。内容を確認のうえご連絡いたします。</p></div></section>
+<section class="section contact-page-intro"><div class="container contact-page-heading"><p class="section-label">Get in Touch</p><h2>お気軽にご相談ください</h2><p class="section-text">ジュエリー・真珠、展示会、オーダーメイド旅行、国際貿易に関するご相談を承ります。</p></div></section>
+<section class="contact-page-main"><div class="container contact-page-grid">
+<div class="contact-details-panel"><p class="section-label">Company Information</p><h2>連絡先</h2><div class="contact-detail-list"><div class="contact-detail-card"><span class="contact-detail-number">01</span><div><h3>メール</h3><a href="mailto:mood_287055554@yahoo.co.jp">mood_287055554@yahoo.co.jp</a></div></div><div class="contact-detail-card"><span class="contact-detail-number">02</span><div><h3>TEL / FAX</h3><a href="tel:0661363702">06-6136-3702</a></div></div><div class="contact-detail-card"><span class="contact-detail-number">03</span><div><h3>所在地</h3><p>〒559-0024<br>大阪府大阪市住之江区新北島2丁目4-4</p></div></div></div><p class="contact-response-note">お問い合わせ内容を確認後、できる限り早くご返信します。資料や写真はメールでもお送りいただけます。</p></div>
+<div class="contact-form-panel"><p class="section-label">Inquiry Form</p><h2>お問い合わせフォーム</h2><p class="contact-form-lead">送信ボタンを押すと、お使いのメールソフトが起動します。</p>
+<form id="contactForm" class="contact-form"><div class="form-row"><div class="form-group"><label for="name">お名前 <span>必須</span></label><input type="text" id="name" required autocomplete="name"></div><div class="form-group"><label for="company">会社名</label><input type="text" id="company" autocomplete="organization"></div></div><div class="form-row"><div class="form-group"><label for="email">メールアドレス <span>必須</span></label><input type="email" id="email" required autocomplete="email"></div><div class="form-group"><label for="phone">電話番号</label><input type="tel" id="phone" autocomplete="tel"></div></div><div class="form-group"><label for="service">お問い合わせ内容 <span>必須</span></label><select id="service" required><option value="">選択してください</option><option value="ジュエリー・真珠">ジュエリー・真珠</option><option value="展示会出展・ブース設営">展示会出展・ブース設営</option><option value="日本オーダーメイド旅行">日本オーダーメイド旅行</option><option value="国際貿易・日本商品調達">国際貿易・日本商品調達</option><option value="その他">その他</option></select></div><div class="form-group"><label for="message">ご相談内容 <span>必須</span></label><textarea id="message" rows="7" required placeholder="ご希望の内容、時期、ご質問などをご記入ください"></textarea></div><label class="privacy-check"><input type="checkbox" required><span>入力した情報を本件への回答に使用することに同意します。</span></label><button type="submit" class="btn contact-submit">メールを作成する</button><p class="form-help">メールソフトが起動しない場合は、mood_287055554@yahoo.co.jpへ直接お送りください。</p></form>
+</div></div></section>
+</main>
+<footer><p>© 2026 TOEI CORPORATION. All Rights Reserved.</p><p class="site-credit">サイト制作：<a href="https://jiamei-tech.jp/" target="_blank" rel="noopener noreferrer">嘉美技術株式会社</a></p></footer>
+<script>
+document.addEventListener("DOMContentLoaded",function(){const s=document.getElementById("service"),q=new URLSearchParams(location.search).get("service");if(q&&Array.from(s.options).some(o=>o.value===q))s.value=q;document.getElementById("contactForm").addEventListener("submit",function(e){e.preventDefault();const v=id=>document.getElementById(id).value.trim(),subject="【Webサイトお問い合わせ】"+s.value+"｜"+v("name"),body=["お名前："+v("name"),"会社名："+(v("company")||"未記入"),"メール："+v("email"),"電話番号："+(v("phone")||"未記入"),"お問い合わせ内容："+s.value,"","ご相談内容：",v("message")].join("\n");location.href="mailto:mood_287055554@yahoo.co.jp?subject="+encodeURIComponent(subject)+"&body="+encodeURIComponent(body);});});
+</script>
+</body>
+</html>

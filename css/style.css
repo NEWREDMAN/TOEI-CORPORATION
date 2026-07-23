@@ -12,7 +12,7 @@ html{
 }
 
 body{
-    font-family:"Microsoft YaHei","Hiragino Sans GB",Arial,sans-serif;
+    font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,"Microsoft YaHei","Hiragino Sans GB",Arial,sans-serif;
     color:#2b2b2b;
     background:#ffffff;
     line-height:1.7;
@@ -918,6 +918,221 @@ footer{
 }
 
 /* =========================
+   Contact Page
+========================= */
+.page-hero.contact-hero{
+    min-height:340px;
+    padding:90px 0 85px;
+    display:flex;
+    align-items:center;
+    background:
+        linear-gradient(rgba(0,0,0,0.52),rgba(0,0,0,0.52)),
+        url("../images/hero.jpg") center center / cover no-repeat;
+    color:#ffffff;
+}
+
+.page-hero.contact-hero .section-label,
+.page-hero.contact-hero h1,
+.page-hero.contact-hero p{
+    color:#ffffff;
+}
+
+.page-hero.contact-hero h1{
+    font-size:42px;
+    line-height:1.25;
+    margin-bottom:16px;
+}
+
+.contact-page-intro{
+    text-align:center;
+    padding-bottom:50px;
+}
+
+.contact-page-heading .section-text{
+    margin:0 auto;
+}
+
+.contact-page-main{
+    padding:20px 0 90px;
+    background:#fafafa;
+}
+
+.contact-page-grid{
+    display:grid;
+    grid-template-columns:0.85fr 1.15fr;
+    gap:42px;
+    align-items:start;
+}
+
+.contact-details-panel,
+.contact-form-panel{
+    background:#ffffff;
+    border:1px solid #eeeeee;
+    border-radius:10px;
+    padding:42px 40px;
+    box-shadow:0 14px 34px rgba(0,0,0,0.05);
+}
+
+.contact-details-panel > h2,
+.contact-form-panel > h2{
+    color:#222222;
+    font-size:30px;
+    margin-bottom:26px;
+}
+
+.contact-detail-list{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.contact-detail-card{
+    display:grid;
+    grid-template-columns:46px 1fr;
+    gap:16px;
+    align-items:start;
+    padding:22px 0;
+    border-bottom:1px solid #eeeeee;
+}
+
+.contact-detail-number{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    color:#ffffff;
+    background:#0b9c90;
+    font-size:13px;
+    font-weight:700;
+}
+
+.contact-detail-card h3{
+    color:#222222;
+    font-size:18px;
+    margin-bottom:6px;
+}
+
+.contact-detail-card p,
+.contact-detail-card a{
+    color:#666666;
+    font-size:15px;
+    line-height:1.75;
+    text-decoration:none;
+    word-break:break-word;
+}
+
+.contact-detail-card a:hover{
+    color:#0b9c90;
+}
+
+.contact-response-note{
+    margin-top:26px;
+    padding:20px;
+    background:#f0f8f7;
+    border-left:3px solid #0b9c90;
+    color:#666666;
+    font-size:14px;
+    line-height:1.8;
+}
+
+.contact-form-lead{
+    color:#666666;
+    font-size:15px;
+    margin:-12px 0 28px;
+}
+
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.form-group label{
+    color:#333333;
+    font-size:15px;
+    font-weight:600;
+}
+
+.form-group label span{
+    display:inline-block;
+    margin-left:6px;
+    padding:2px 7px;
+    border-radius:3px;
+    background:#0b9c90;
+    color:#ffffff;
+    font-size:11px;
+    font-weight:500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+    padding:13px 14px;
+    border:1px solid #d8d8d8;
+    border-radius:5px;
+    background:#ffffff;
+    color:#333333;
+    font:inherit;
+    font-size:15px;
+    transition:border-color 0.2s,box-shadow 0.2s;
+}
+
+.form-group textarea{
+    resize:vertical;
+    min-height:150px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    outline:none;
+    border-color:#0b9c90;
+    box-shadow:0 0 0 3px rgba(11,156,144,0.12);
+}
+
+.privacy-check{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    color:#666666;
+    font-size:14px;
+    line-height:1.6;
+    cursor:pointer;
+}
+
+.privacy-check input{
+    margin-top:4px;
+    accent-color:#0b9c90;
+}
+
+.contact-submit{
+    border:0;
+    cursor:pointer;
+    align-self:flex-start;
+}
+
+.form-help{
+    color:#888888;
+    font-size:13px;
+    line-height:1.7;
+}
+
+/* =========================
    Tablet
 ========================= */
 @media(max-width:1000px){
@@ -957,6 +1172,10 @@ footer{
 
     .section-gallery-wide{
         grid-column:span 1;
+    }
+
+    .contact-page-grid{
+        grid-template-columns:1fr;
     }
 }
 
@@ -1214,6 +1433,42 @@ footer{
         padding:0 12px;
     }
 
+    .page-hero.contact-hero{
+        min-height:180px;
+        padding:38px 0 36px;
+    }
+
+    .page-hero.contact-hero h1{
+        font-size:28px;
+    }
+
+    .page-hero.contact-hero p{
+        font-size:14px;
+        padding:0 12px;
+    }
+
+    .contact-page-intro{
+        padding-bottom:34px;
+    }
+
+    .contact-page-main{
+        padding:10px 0 55px;
+    }
+
+    .contact-details-panel,
+    .contact-form-panel{
+        padding:30px 24px;
+    }
+
+    .contact-details-panel > h2,
+    .contact-form-panel > h2{
+        font-size:25px;
+    }
+
+    .form-row{
+        grid-template-columns:1fr;
+    }
+
     .service-detail-section{
         padding:55px 0;
     }
@@ -1370,6 +1625,15 @@ footer{
     }
 
     .page-hero.services-hero h1{
+        font-size:26px;
+    }
+
+    .page-hero.contact-hero{
+        min-height:165px;
+        padding:34px 0 32px;
+    }
+
+    .page-hero.contact-hero h1{
         font-size:26px;
     }
 
